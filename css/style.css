@@ -1,0 +1,212 @@
+:root {
+    --bs: 0px 1px 10px 3px rgba(0, 0, 0, 0.3);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    font-size: 16px;
+    font-family: Segoe UI;
+}
+
+.header {
+    padding: 50px;
+    background: url(../media/background.jpg), rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: overlay;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+.header h1 {
+    text-transform: uppercase;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+.main {
+    background: yellow;
+    width: 100vw;
+    min-height: 500px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.content {
+    width: 100%;
+    background: #eee;
+}
+
+.quick {
+    min-width: 500px;
+    background: #e1e1e1;
+    position: relative;
+    text-align: center;
+}
+
+.blurb {
+    padding: 20px 40px;
+}
+
+.blurb h2 {
+    font-size: 30px;  
+    position: relative;
+    margin: 20px 0;
+}
+
+.blurb h2::after {
+    display: block;
+    height: 2px;
+    width: 100px;
+    background: black;
+    content: '';
+    margin: 15px 0 0px;
+}
+
+.blurb p {
+    font-size: 18px;
+    line-height: 175%;
+    max-width: 120ch;
+}
+
+.blurb div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.blurb img {
+    border: 2px solid #000;
+    height: calc(10vw + 150px);
+    width: calc((10vw + 150px)*(16/9));
+    max-width: 100%;
+    margin: 20px 0;
+}
+
+.blurb img::after {
+    content: "1.1";
+    display: block;
+}
+
+.links {
+    text-align: center;
+    padding: 20px 0 40px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.quick h2::after {
+    display: block;
+    height: 2px;
+    width: 40px;
+    background: black;
+    content: '';
+    margin: 10px auto 20px;
+}
+
+a {
+    text-decoration: none;
+    transition: .4s all ease;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    display: inline-block;
+    width: 200px;
+    margin: 10px;
+    box-shadow: var(--bs);
+    border: 2px solid #000;
+    position: relative;
+}
+
+.link-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-discord {
+    background: #2c2f33;
+    color: white;
+}
+
+.btn-youtube {
+    background: #ff0000;
+    color: white;
+}
+
+.btn-twitch {
+    background: #6441a5;
+    color: white;
+}
+
+.btn-instagram {
+    background: #fccc63;
+    color: black;
+}
+
+.btn-facebook {
+    background: #4267B2;
+    color: white;
+}
+
+.btn-twitter {
+    background: #1DA1F2;
+    color: white;
+}
+
+.btn:hover, .btn:focus {
+    box-shadow: none;
+}
+
+.videos-content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.videos-content iframe {
+    width: 400px;
+    height: calc((9/16)*400px);
+    margin: 20px;
+    border: 6px solid #000;
+    box-shadow: var(--bs);
+    text-align: center;
+}
+
+.footer {
+    background: #000;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
