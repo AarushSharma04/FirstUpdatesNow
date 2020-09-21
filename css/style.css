@@ -287,10 +287,14 @@ a {
 
 .blurb a {
     color: #000;
-    border-bottom: 2px solid #000;
-    margin: 10px 0;
+    background: #222;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 40px;
+    margin: 12px 0;
     display: inline-block;
-    font-size: 20px;
+    font-size: 18px;
+    box-shadow: var(--bs);
 }
 
 .nav {
